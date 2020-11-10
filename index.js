@@ -72,7 +72,8 @@ app.post('/create-todo',function(req,res)
 //deleting todo
 app.get('/delete-todo',function(req,res)
 {
-    let desc=req.query.id;
+    //get the id from query in the ul
+    let id=req.query.id;
     //find the todo in the db using id and delete
 
     Todo.findByIdAndDelete(id,function(err)
