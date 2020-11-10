@@ -1,0 +1,140 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#page-heading
+{
+    text-align:center;
+    margin-top: 25px ;
+    color:red;
+}
+
+#new-todo-form
+{
+    margin-left:10px;   
+    margin-right: 10px;
+}
+
+#box
+{
+    border:none;
+}
+
+
+
+.input-description
+{
+    width:80%;
+    height: 10%;
+    font-size:25px;
+    color: grey;
+}
+
+#input-cat-date
+{
+    display: flex;
+
+}
+
+#input-category
+{
+    width: 50%;
+    height: 10%;
+    font-size: 50px;
+}
+
+#input-cat-date h4
+{
+    padding-left:40px ;
+    
+}
+
+.vl
+{
+    border-left: 6px solid cyan;
+  height: 50px;
+}
+
+#input-date 
+{
+    height: 10%;
+    width: 40%;
+    
+}
+
+#input-date-box
+{
+    padding-left: 100px;
+    border:none;
+    font-size: 20px;
+}
+
+#add-button
+{
+    color: red;
+    margin-left: 40% ;
+    
+}
+
+
+
+#add-button-box
+{
+    border: none;
+    background-color: grey;
+    height: 80px;
+    width: 200px;
+    font-size:30px;
+    color:white;
+    cursor: pointer;
+}
+
+#to-do-list-container ul
+{
+    padding:10px;
+    list-style:none;
+}
+
+.tododetails
+{
+    padding: 3px,10px;
+    border: 1px solid white;
+    background-color: #6f92f9;
+    box-shadow: 1px lightgrey;
+    color: white;
+    display: flex;
+
+}
+
+.tododetails .details
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.tododetails .delete-button
+{
+    width: 10%;
+    /* padding: 3px; */
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.tododetails .delete-button a
+{
+    color: white;
+    background-color: red;
+}
+
+.tododetails p
+{
+    margin: 5px 0;
+}

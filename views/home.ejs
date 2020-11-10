@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- our css should be below all other styles so that we can override it-->
+
+    <link rel="stylesheet" href="/css/home.css">
+
+</head>
+
+<body>
+    <h1 id="page-heading">
+        <i class="far fa-list-alt"></i>
+        TODO App
+    </h1>
+
+
+    <form id="new-todo-form" action="/create-todo" method="POST">
+        <hr>
+        <h4>Description</h4>
+        <input id="box" class="input-description" type="text" name="description" placeholder="What do you need to do ?"
+            required>
+
+
+        <hr>
+        <h4>Category</h4>
+        <span id="input-cat-date">
+            <span id="input-category">
+                <label for="category">
+                    <select id="box" name="category">
+                        <option selected>Choose Category</option>
+                        <option> Personal</option>
+                        <option> Work</option>
+                        <option> School</option>
+                        <option> Home</option>
+                        <option> Others </option>
+
+                    </select>
+
+                </label>
+            </span>
+            <div class="vl"></div>
+            <h4>Due Date</h4>
+
+            <div id="input-date">
+                <input id="input-date-box" type="date" name="date" required>
+            </div>
+        </span>
+        <hr>
+        <div id="add-button">
+
+            <button id="add-button-box" type="submit"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+
+
+
+    </form>
+
+    <div id="to-do-list-container">
+        <ul>
+            <% for(let i of to_do) { %>
+            <!--Display all work-->
+            <li class="tododetails">
+                <div class="details">
+                    <p> <%= i.description %></p>
+                    <p> <%= i.category %> </p>
+                    <p> <%= i.date %> </p>
+                </div>
+                <!--delete contact-->
+
+                <div class="delete-button">
+                    <a href="/delete-todo/?id=<%= i.id %>"></a>
+                    <i class="fas fa-window-close"></i>
+                    </a>
+                </div>
+
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+
+
+</html>
