@@ -1,0 +1,19 @@
+// reqquire express
+const express = require('express');
+
+const app = express();
+
+const port=8000;
+
+
+
+app.listen(port,function(err)
+{
+    if (err)
+    {
+        console.log(`error in running the server ${err}`);
+    }
+    else{
+        console.log(`Yup ! My express server is running on port ${port}`);
+    }
+});
