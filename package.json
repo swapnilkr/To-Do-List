@@ -13,5 +13,14 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.10.13"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnilkr/To-Do-List.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swapnilkr/To-Do-List/issues"
+  },
+  "homepage": "https://github.com/swapnilkr/To-Do-List#readme"
 }
